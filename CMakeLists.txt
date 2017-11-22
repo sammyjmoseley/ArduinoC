@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.8)
+project(ArduinoC)
+
+set(CMAKE_CXX_STANDARD 11)
+include_directories(./arduino-libraries/include)
+include_directories(./arduino-libraries/arduino)
+include_directories(./arduino-libraries/libraries/Wire/src)
+include_directories(./arduino-libraries/libraries/SPI/src)
+set(SOURCE_FILES src/main.cpp)
+add_executable(ArduinoC ${SOURCE_FILES})
