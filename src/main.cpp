@@ -4,7 +4,7 @@
 #include <USBAPI.h>
 #include <SPI.h>
 #include <HardwareSerial.h>
-
+#include <string>
 int atexit(void (* /*func*/ )()) { return 0; }
 
 // Weak empty variant initialization function.
